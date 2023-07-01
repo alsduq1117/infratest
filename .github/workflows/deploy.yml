@@ -7,7 +7,7 @@ on:
 # https://github.com/actions/setup-java
 # actions/setup-java@v2는 사용자 정의 배포를 지원하고 Zulu OpenJDK, Eclipse Temurin 및 Adopt OpenJDK를 기본적으로 지원합니다. v1은 Zulu OpenJDK만 지원합니다.
 jobs:
-  build:                                     # build 라는 이름을 가진 action
+  build: # build 라는 이름을 가진 action
     runs-on: ubuntu-latest                   # 우분투 설치
     steps:
       - name: Checkout
@@ -34,8 +34,8 @@ jobs:
             docker build -t spring-boot-cicd .
             docker tag spring-boot-cicd minyeob/spring-boot-cicd:latest
             docker push minyeob/spring-boot-cicd:latest
-            
-
+      
+      
 
       # UTC가 기준이기 때문에 한국시간으로 맞추려면 +9시간 해야 한다.
       - name: Get current time
