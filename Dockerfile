@@ -3,7 +3,7 @@
 
 FROM adoptopenjdk/openjdk11:latest
 CMD ["./gradlew", "clean", "build"]
-ARG JAR_FILE_PATH=build/libs/jpashop-0.0.1-SNAPSHOT.jar
+ARG JAR_FILE_PATH=build/libs/infratest-0.0.1-SNAPSHOT.jar    # 프로젝트 이름 확인할것
 COPY ${JAR_FILE_PATH} app.jar
 ENTRYPOINT ["java", "-jar", "app.jar"]
 
