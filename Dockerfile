@@ -14,4 +14,5 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
  # 빌드된 JAR 파일을 app.jar로 복사
  # Java를 실행하여 app.jar를 실행
 
+
 # https://umanking.github.io/2021/07/11/spring-boot-docker-starter/
