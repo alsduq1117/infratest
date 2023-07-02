@@ -12,5 +12,7 @@ public class EbHealthCheck {
     public ResponseEntity<?> doHealthCheck() {
         return ResponseEntity.ok("HealthCheck OK");
     }
+
+    //무중단 확인
 }
 
