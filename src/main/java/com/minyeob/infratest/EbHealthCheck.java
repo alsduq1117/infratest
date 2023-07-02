@@ -10,7 +10,7 @@ public class EbHealthCheck {
     // EB 헬스체크를 위한 코드
     @GetMapping( "/")
     public ResponseEntity<?> doHealthCheck() {
-        return ResponseEntity.ok("HealthCheck OK");
+        return ResponseEntity.ok("HealthCheck 123");
     }
 
     //무중단 확인
